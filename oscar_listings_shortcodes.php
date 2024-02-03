@@ -2,7 +2,7 @@
 /*
 Plugin Name: Oscar Listings Shortcodes
 Description: Use WordPress shortcodes to create listings pages for shows using the Oscar booking system by Savoy Systems Ltd. Please note that this project is not affiliated with Savoy Systems Ltd.
-Version: 1.0
+Version: 1.1
 Author: Jonny Browning
 Author URI: https://www.jonnybrowning.com
 */
@@ -45,12 +45,12 @@ function output_listing($show) {
   $listingOutput .= "<div class='oscar-listing-outer-container'>";
   $listingOutput .=
     "<div class='oscar-listing-title'>
-      <a href=" . $show['@attributes']['BookingURL'] . "><h1>" . $show['@attributes']['Title'] . "</h1></a>
+      <a href=" . $show['@attributes']['BookingURL'] . "><h1>" . $show['@attributes']['ReportTitle'] . "</h1></a>
     </div>
     <div class='oscar-listing-inner-container'>
       <div class='oscar-listing-image'>
         <a href=" . $show['@attributes']['BookingURL'] . ">
-          <img src='" . $show['@attributes']['InternetBookingImageURL'] . "' alt='" . $show['@attributes']['Title'] . "' />
+          <img src='" . $show['@attributes']['InternetBookingImageURL'] . "' alt='" . $show['@attributes']['ReportTitle'] . "' />
         </a>
       </div>
       <div class='oscar-listing-synopsis'>"  . $show['@attributes']['Synopsis'] ."</div>
