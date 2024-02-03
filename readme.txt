@@ -40,6 +40,10 @@ The use of multiple flags is treated as an inclusive OR. i.e.
 You can add styling to the listings page by customising your theme with additional CSS. In the WordPress back-end, go to Appearance => Customise => Additional CSS
 
 == Changelog ==
+1.1
+
+Update show name to use "ReportTitle" field from API (instead of shorter "Title" field)
+
 1.0
 
 Initial release
